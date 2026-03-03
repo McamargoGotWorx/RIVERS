@@ -1169,3 +1169,136 @@ h4,
 .disclaimer {
     max-width: 500px;
 }
+
+/* ======= COMMERCIAL UPGRADES ======= */
+.financial-hook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 3rem auto;
+    max-width: 900px;
+}
+
+@media (min-width: 768px) {
+    .financial-hook {
+        flex-direction: row;
+        gap: 2rem;
+        align-items: stretch;
+    }
+}
+
+.financial-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    flex: 1;
+    width: 100%;
+}
+
+.financial-card h3 {
+    font-size: 1.35rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.vs-badge {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-focus);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0.75rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin: -1rem 0;
+    z-index: 10;
+}
+
+@media (min-width: 768px) {
+    .vs-badge {
+        margin: auto -1rem;
+    }
+}
+
+.cost-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cost-row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-subtle);
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.cost-row.total-row {
+    border-bottom: none;
+    padding-top: 1rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--text-primary);
+}
+
+.savings-banner {
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    text-align: center;
+    margin: 0 auto 4rem;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .savings-banner {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem 3rem;
+    }
+}
+
+.savings-banner p {
+    font-size: 1.15rem;
+    color: var(--text-primary);
+}
+
+.savings-banner strong {
+    color: var(--color-green);
+    font-size: 1.5rem;
+}
+
+.manifesto-banner {
+    background: var(--bg-main);
+    padding: 5rem 0;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.manifesto-banner h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #fff, #a1a1aa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.manifesto-banner p {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    max-width: 800px;
+    margin: 0 auto;
+}
