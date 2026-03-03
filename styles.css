@@ -1302,3 +1302,75 @@ h4,
     max-width: 800px;
     margin: 0 auto;
 }
+
+/* ======= HERO IMAGE ======= */
+.hero-image-container {
+    margin-top: 4rem;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-main-image {
+    max-width: 100%;
+    width: 800px;
+    height: auto;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(79, 70, 229, 0.2);
+    border: 1px solid var(--border-focus);
+    background: var(--bg-surface);
+}
+
+/* ======= FAQ SECTION ======= */
+.faq-section {
+    padding: 100px 0;
+    border-top: 1px solid var(--border-subtle);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    max-width: 900px;
+    margin: 4rem auto 0;
+}
+
+@media (min-width: 768px) {
+    .faq-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.faq-item h4 {
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.faq-item p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.reverse {
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
+    .industry-segment.reverse .industry-content {
+        margin-left: auto;
+        text-align: right;
+    }
+
+    .industry-segment.reverse .segment-list li {
+        justify-content: flex-end;
+        display: flex;
+        gap: 0.5rem;
+    }
+}
